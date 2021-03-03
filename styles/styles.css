@@ -1,0 +1,659 @@
+/* accounting for all and resetting margin */
+* {
+	margin: 0px;
+	font: 100%;
+}
+
+h1,h2,h3,h4,h5, a {
+	font-family: 'RocknRoll One', sans-serif;
+}
+
+p	{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+/*anything smaller than a tablet*/
+@media only screen and (max-width: 667px) {
+	body {
+		background-color: bisque;
+	}
+	h1,h2,h3,h4,h5,a {
+		font-family: 'RocknRoll One', sans-serif;
+	}
+
+	* {
+		margin: 0px;
+		font-size: 100%;
+	}
+	
+	/*header section*/
+	header {
+		height: 500px;
+		background-image:url("../images/banner.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	header ul {
+	    list-style-type: none;
+	    padding: 8px;
+	    text-align: center;
+	}
+
+	header ul li {
+	    display: inline;
+	}	
+	 a {
+		text-decoration: none;
+		color:aliceblue;
+		font-size:24px;
+		padding: 8px;
+	}
+	ul li a:hover {
+		color: orange;
+		text-decoration: underline;
+	}
+	.logo {
+		height: 300px;
+		display: block;
+  		margin-left: auto;
+ 		margin-right: auto;
+		padding: 8px;
+		
+	}
+	header h1 {
+		text-decoration: none;
+		color:aliceblue;
+		font-size:32px;
+		padding: 8px;
+		text-align: center;
+	}
+	
+	/*text section*/
+	
+	.text {
+		height: 500px;
+		background-color: orange;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	.text2 {
+		height: 400px;
+		background-color: orange;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	.text3 {
+		height: 300px;
+		background-color: orange;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	
+	.text h1, .text2 h1, .text3 h1 {
+		text-decoration: none;
+		color:aliceblue;
+		font-size:32px;
+		padding: 8px;
+		text-align: center;
+	}
+	.text p, .text2 p, .text3 p {
+		padding: 8px;
+		text-indent: 8px;
+	}
+	
+	/*links section*/
+	
+	.links .price {
+		height: 400px;
+		background-image:url("../images/insidehouse.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}	
+	.links .contact {
+		height: 400px;
+		background-image:url("../images/rvonroad.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	.links a h2 {
+		text-align: center;
+		margin-top:  25%;
+	}
+	.links a h2:hover {
+		color: orange;
+	}
+	
+	/*pricing section*/
+	
+	.links .price2 {
+		height: 400px;
+		background-image:url("../images/insidehouse.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}	
+	.links .contact2 {
+		height: 400px;
+		background-image:url("../images/rvonroad.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	.links .price2 h2 {
+		text-align: center;
+		color: aliceblue;
+		font-size: 36px;
+		padding-top: 32px;
+	}
+	.links .price2 input {
+		margin-left: 32px;
+	}
+	.links .price2 span {
+		color: white;
+		font-size: 24px;
+		line-height: 24px;
+		padding: 8px;
+	}
+	.links .contact2 h2 {
+		text-align: center;
+		color: aliceblue;
+		font-size: 36px;
+		padding-top: 32px;
+	}
+	.links .contact2 input {
+		margin-top: 32px;
+		margin-left: 32px;
+	}
+	
+	
+	/*contact***********************************************/
+	.links .price3 {
+		height: 400px;
+		background-image:url("../images/insidehouse.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}	
+	.links .contact3 {
+		height: 400px;
+		background-image:url("../images/map.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	.links .price3 h3 {
+		color: aliceblue;
+		font-size: 36px;
+		padding-top: 32px;
+	}
+	.links .price3 form {
+		margin-left: 32px;
+	}
+	.links .contact3 h2 {
+		text-align: center;
+		color: black;
+		font-size: 36px;
+		padding-top: 64px;
+	}
+
+	
+	/*footer*/
+	footer {
+		height: 400px;
+		background-color: orange;
+		border-radius: 50px;text-align: center;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	footer a {
+		padding: 8px;
+	}
+	
+	footer a img {
+		height: 50px;
+	}
+	
+} /*end of media query*/
+
+
+
+
+
+
+
+
+/*For viewing on a tablet*/
+@media only screen and (min-width: 668px) {
+	body {
+		background-color: bisque;
+	}
+	
+	/*header section*/
+	header {
+		height: 450px;
+		background-image:url("../images/banner.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	header ul {
+	    list-style-type: none;
+	    padding: 8px;
+	    text-align: center;
+	}
+
+	header ul li {
+	    display: inline;
+	}	
+	 a {
+		text-decoration: none;
+		color:aliceblue;
+		font-size:24px;
+		padding: 8px;
+	}
+	ul li a:hover {
+		color: orange;
+		text-decoration: underline;
+	}
+	.logo {
+		height: 300px;
+		display: block;
+  		margin-left: auto;
+ 		margin-right: auto;
+		padding: 8px;
+		
+	}
+	header h1 {
+		text-decoration: none;
+		color:aliceblue;
+		font-size:32px;
+		padding: 8px;
+		text-align: center;
+	}
+	
+	/*text section*/
+	
+	.text {
+		height: 300px;
+		background-color: orange;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	.text2, .text3 {
+		height: 300px;
+		background-color: orange;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	
+	.text h1, .text2 h1, .text3 h1 {
+		text-decoration: none;
+		color:aliceblue;
+		font-size:32px;
+		padding: 8px;
+		text-align: center;
+	}
+	.text p, .text2 p, .text3 p {
+		padding: 8px;
+		text-indent: 8px;
+	}
+	
+	/*links section*/
+	
+	.links .price {
+		height: 400px;
+		background-image:url("../images/insidehouse.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}	
+	.links .contact {
+		height: 400px;
+		background-image:url("../images/rvonroad.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	.links a h2 {
+		text-align: center;
+		margin-top:  25%;
+	}
+	.links a h2:hover {
+		color: orange;
+	}
+	
+	/*pricing page*/
+	
+	.links .price2 {
+		height: 400px;
+		background-image:url("../images/insidehouse.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}	
+	.links .contact2 {
+		height: 400px;
+		background-image:url("../images/rvonroad.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	.links .price2 h2 {
+		text-align: center;
+		color: aliceblue;
+		font-size: 36px;
+		padding-top: 64px;
+	}
+	.links .price2 input {
+		margin-left: 32px;
+	}
+	.links .price2 span {
+		color: white;
+		font-size: 24px;
+		line-height: 24px;
+		padding: 8px;
+	}
+	.links .contact2 h2 {
+		text-align: center;
+		color: aliceblue;
+		font-size: 36px;
+		padding-top: 0px;
+	}
+	.links .contact2 input {
+		margin-top: 32px;
+		margin-left: 32px;
+	}
+	
+	
+	/*contact***********************************************/
+	.links .price3 {
+		height: 400px;
+		background-image:url("../images/insidehouse.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}	
+	.links .contact3 {
+		height: 400px;
+		background-image:url("../images/map.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	.links .price3 h3 {
+		color: aliceblue;
+		font-size: 36px;
+		padding-top: 32px;
+	}
+	.links .price3 form {
+		margin-left: 32px;
+	}
+	.links .contact3 h2 {
+		text-align: center;
+		color: black;
+		font-size: 36px;
+		padding-top: 64px;
+	}
+
+	
+	/*footer*/
+	footer {
+		height: 400px;
+		background-color: orange;
+		border-radius: 50px;text-align: center;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	footer a {
+		padding: 8px;
+	}
+	
+	footer a img {
+		height: 50px;
+	}
+}
+
+
+
+
+
+
+
+
+/*for viewing on a computer*/
+@media only screen and (min-width: 1000px) {
+	body {
+		width: 960px;
+		margin: auto;
+		background-color: bisque;
+	}
+	
+	/*header section*/
+	header {
+		height: 550px;
+		background-image:url("../images/banner.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	header ul {
+	    list-style-type: none;
+	    padding: 8px;
+	    text-align: center;
+	}
+
+	header ul li {
+	    display: inline;
+	}	
+	 a {
+		text-decoration: none;
+		color:aliceblue;
+		font-size:24px;
+		padding: 8px;
+	}
+	ul li a:hover {
+		color: orange;
+		text-decoration: underline;
+	}
+	.logo {
+		height: 400px;
+		display: block;
+  		margin-left: auto;
+ 		margin-right: auto;
+		padding: 8px;
+		
+	}
+	header h1 {
+		text-decoration: none;
+		color:aliceblue;
+		font-size:32px;
+		padding: 8px;
+		text-align: center;
+	}
+	
+	/*text section*/
+	
+	.text {
+		height: 300px;
+		background-color: orange;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	.text2 {
+		height: 250px;
+		background-color: orange;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	.text3 {
+		height: 200px;
+		background-color: orange;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	
+	.text h1, .text2 h1, .text3 h1 {
+		text-decoration: none;
+		color:aliceblue;
+		font-size:32px;
+		padding: 8px;
+		text-align: center;
+	}
+	.text p, .text2 p, .text3 p {
+		padding: 8px;
+		text-indent: 8px;
+	}
+	
+	/*links section*/
+	
+	.links .price {
+		height: 400px;
+		background-image:url("../images/insidehouse.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+		width: 50%;
+		float: left;
+		z-index: -1;
+	}	
+	.links .contact {
+		height: 400px;
+		background-image:url("../images/rvonroad.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+		width: 50%;
+		float: right;
+	}
+	.links a h2 {
+		text-align: center;
+		margin-top: 15%;
+	}
+	.links a h2:hover {
+		color: orange;
+	}
+	
+	/*pricing page*/
+	
+	.links .price2 {
+		height: 400px;
+		background-image:url("../images/insidehouse.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+		width: 50%;
+		float: left;
+	}	
+	.links .contact2 {
+		height: 400px;
+		background-image:url("../images/rvonroad.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+		width: 50%;
+		float: right;
+	}
+	.links .price2 h2 {
+		text-align: center;
+		color: aliceblue;
+		font-size: 36px;
+		padding-top: 64px;
+	}
+	.links .price2 input {
+		margin-left: 32px;
+	}
+	.links .price2 span {
+		color: white;
+		font-size: 24px;
+		line-height: 24px;
+		padding: 8px;
+	}
+	.links .contact2 h2 {
+		text-align: center;
+		color: aliceblue;
+		font-size: 36px;
+		padding-top: 64px;
+	}
+	.links .contact2 input {
+		margin-top: 32px;
+		margin-left: 32px;
+	}
+	
+	
+	/*contact***********************************************/
+	.links .price3 {
+		height: 400px;
+		background-image:url("../images/insidehouse.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+		width: 50%;
+		float: left;
+	}	
+	.links .contact3 {
+		height: 400px;
+		background-image:url("../images/map.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 50px;
+		box-shadow: 5px 10px 5px 10px gray;
+		width: 50%;
+		float: right;
+	}
+	.links .price3 h3 {
+		color: aliceblue;
+		font-size: 36px;
+		padding-top: 32px;
+	}
+	.links .price3 form {
+		margin-left: 32px;
+	}
+	.links .contact3 h2 {
+		text-align: center;
+		color: black;
+		font-size: 36px;
+		padding-top: 64px;
+	}
+
+	
+	/*footer*/
+	footer {
+		margin-top:400px;
+		height: 400px;
+		background-color: orange;
+		border-radius: 50px;text-align: center;
+		box-shadow: 5px 10px 5px 10px gray;
+	}
+	footer a {
+		padding: 8px;
+	}
+	
+	footer a img {
+		height: 50px;
+	}
+}
+
